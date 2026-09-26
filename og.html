@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; }
+  .og { position: relative; width: 1200px; height: 630px; overflow: hidden; background: #0e0f0c; color: #f2f0e7; font-family: 'Archivo', sans-serif; }
+  canvas { position: absolute; inset: 0; }
+  .photo { position: absolute; right: 0; top: 0; width: 430px; height: 630px; background: url(media/p/vda-arrivee.jpg) 50% 38% / cover; filter: grayscale(1) contrast(1.1); }
+  .photo::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #0e0f0c 0%, rgba(14,15,12,.55) 22%, rgba(14,15,12,0) 55%); }
+  .copy { position: absolute; left: 64px; top: 56px; bottom: 52px; width: 700px; display: flex; flex-direction: column; }
+  .k { display: flex; align-items: center; gap: 14px; font-family: 'JetBrains Mono', monospace; font-size: 17px; letter-spacing: .12em; text-transform: uppercase; color: rgba(242,240,231,.7); }
+  .mark { display: grid; place-items: center; width: 44px; height: 44px; background: #d4f53c; color: #0e0f0c; font-weight: 900; font-style: italic; font-size: 19px; border-radius: 4px; letter-spacing: -.02em; }
+  h1 { margin: 34px 0 0; font-weight: 850; font-style: italic; text-transform: uppercase; font-size: 104px; line-height: .84; letter-spacing: -.025em; font-variation-settings: 'wdth' 66; }
+  h1 .x { color: #d4f53c; font-weight: 400; font-style: normal; font-variation-settings: 'wdth' 100; margin: 0 .08em; }
+  h1 .pb { display: block; margin-top: 6px; font-size: 74px; color: #d4f53c; }
+  .row { margin-top: auto; display: flex; gap: 0; border-top: 1px solid rgba(242,240,231,.18); }
+  .row div { padding: 18px 34px 0 0; margin-right: 34px; border-right: 1px solid rgba(242,240,231,.18); }
+  .row div:last-child { border: 0; }
+  .row b { display: block; font-size: 44px; font-weight: 750; line-height: 1; font-variation-settings: 'wdth' 80; letter-spacing: -.02em; }
+  .row span { display: block; margin-top: 8px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: rgba(242,240,231,.55); }
+  .row .hl b { background: #d4f53c; color: #0e0f0c; padding: 2px 8px 0; margin-left: -8px; }
+</style></head>
+<body>
+<div class="og" id="og">
+  <div class="photo"></div>
+  <div class="copy">
+    <div class="k"><span class="mark">XL</span>Candidature · Saison 2 · Paris</div>
+    <h1>Xavier Longueville<span class="x">×</span><span class="pb">HOKA PB Protocol</span></h1>
+    <div class="row">
+      <div><b>2:47:18</b><span>Boston 2026</span></div>
+      <div><b>12 302 km</b><span>depuis 2021</span></div>
+      <div class="hl"><b>2:30</b><span>le cap</span></div>
+    </div>
+  </div>
+</div>
+</body></html>
