@@ -551,3 +551,4 @@ section.paper, section.ink { padding: 120px 0; position: relative; }
 }
 .chapter p.wall-k { font-size: 10px; line-height: 1.4; margin: 0 0 4px; color: var(--txt-p); }
 .chapter .wall-apparel p.wall-k { margin: 0; }
+.lightbox[hidden], .hoka-video[hidden] { display: none; }
