@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xavier Longueville · PB Protocol</title>
+<meta name="description" content="HOKA PB Protocol · Saison 2 · Paris. 2:47:18 à Boston, cap sur 2:30.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%23d4f53c%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Arial%22 font-weight=%22900%22 font-style=%22italic%22 font-size=%2215%22 text-anchor=%22middle%22 fill=%22%230e0f0c%22%3EXL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#carte" aria-label="Haut de page"><span class="brand-mark">XL</span><span class="brand-txt" data-i18n="brand"></span></a>
+  <div class="top-r">
+    <nav class="nav">
+      <a href="#carte"><i>01</i><span data-i18n="nav.map"></span></a><a href="#volume"><i>02</i><span data-i18n="nav.volume"></span></a><a href="#prepas"><i>03</i><span data-i18n="nav.prep"></span></a><a href="#candidature"><i>04</i><span data-i18n="nav.app"></span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Langue / Language">
+      <button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<!-- 01 · CARTE -->
+<section id="carte" class="map-section">
+  <div id="map" aria-label="Carte"></div>
+  <div class="map-vignette"></div>
+
+  <aside class="rail" id="rail">
+    <div class="rail-view rail-index" id="railIndex">
+      <p class="kicker"><span class="dot"></span><span data-i18n="kicker"></span></p>
+      <h1 class="name">Xavier<br>Longueville</h1>
+      <p class="lede" data-i18n="lede"></p>
+      <div id="railTop"></div>
+      <div class="list-filters" id="listFilters" role="tablist"></div>
+      <div class="rail-lists" id="raceLists"></div>
+      <p class="rail-hint" data-i18n="hint"></p>
+    </div>
+    <div class="rail-view rail-detail" id="railDetail" hidden></div>
+  </aside>
+
+  <button class="boston-chip" id="bostonChip" type="button"><span class="arrow">←</span><span data-i18n="boston"></span></button>
+
+  <div class="layers" id="layers"></div>
+  <div class="map-stats" id="mapStats"></div>
+</section>
+
+<nav class="toc-band" aria-label="Sommaire">
+  <a href="#carte" class="tb"><span class="tb-n">01</span><span class="tb-t" data-i18n="nav.map"></span><span class="tb-s" data-i18n="tb.map"></span></a>
+  <a href="#volume" class="tb"><span class="tb-n">02</span><span class="tb-t" data-i18n="nav.volume"></span><span class="tb-s" data-i18n="tb.volume"></span></a>
+  <a href="#prepas" class="tb"><span class="tb-n">03</span><span class="tb-t" data-i18n="nav.prep"></span><span class="tb-s" data-i18n="tb.prep"></span></a>
+  <a href="#candidature" class="tb"><span class="tb-n">04</span><span class="tb-t" data-i18n="nav.app"></span><span class="tb-s" data-i18n="tb.app"></span></a>
+</nav>
+
+<!-- 02 · VOLUME -->
+<section id="volume" class="paper">
+  <div class="wrap">
+    <header class="sec-head">
+      <span class="sec-num">02</span>
+      <h2 data-i18n="vol.title"></h2>
+      <p class="sec-lede" data-i18n="vol.lede"></p>
+    </header>
+    <div class="odo reveal">
+      <div class="odo-num"><span data-count="12302">0</span><small>km</small></div>
+      <p class="odo-cap" data-i18n="vol.cap"></p>
+      <div class="journey" id="journey"></div>
+    </div>
+    <div class="grid-2">
+      <div class="card reveal">
+        <h3 class="card-title" data-i18n="vol.years"></h3>
+        <p class="card-sub" data-i18n="vol.yearsSub"></p>
+        <div class="chart" id="yearsChart"></div>
+      </div>
+      <div class="card reveal">
+        <h3 class="card-title" data-i18n="vol.cal"></h3>
+        <p class="card-sub" data-i18n="vol.calSub"></p>
+        <div class="cal" id="calendar"></div>
+        <div class="cal-legend" id="calLegend"></div>
+      </div>
+    </div>
+    <div class="facts reveal" id="facts"></div>
+  </div>
+</section>
+
+<!-- 03 · PRÉPAS -->
+<section id="prepas" class="ink">
+  <div class="wrap">
+    <header class="sec-head">
+      <span class="sec-num">03</span>
+      <h2 data-i18n="prep.title"></h2>
+      <p class="sec-lede" data-i18n="prep.lede"></p>
+    </header>
+    <div class="card card-ink reveal">
+      <h3 class="card-title" data-i18n="prep.weeks"></h3>
+      <p class="card-sub" data-i18n="prep.weeksSub"></p>
+      <div class="chart weeks" id="weeksChart"></div>
+    </div>
+    <div class="build-head reveal">
+      <h3 data-i18n="prep.buildH"></h3>
+      <p data-i18n="prep.buildP"></p>
+    </div>
+    <div class="builds" id="builds"></div>
+    <div class="grid-2 reveal">
+      <div class="card card-ink">
+        <h3 class="card-title" data-i18n="prep.bos"></h3>
+        <p class="card-sub" data-i18n="prep.bosSub"></p>
+        <ol class="sessions" id="bostonSessions"></ol>
+      </div>
+      <div class="card card-ink">
+        <h3 class="card-title" data-i18n="prep.blocks"></h3>
+        <p class="card-sub" data-i18n="prep.blocksSub"></p>
+        <ol class="blocks" id="topBlocks"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · CANDIDATURE -->
+<section id="candidature" class="paper">
+  <div class="wrap wrap-read">
+    <header class="sec-head">
+      <span class="sec-num">04</span>
+      <h2 data-i18n="app.title"></h2>
+      <p class="sec-lede" data-i18n="app.lede"></p>
+    </header>
+
+    <div class="read">
+      <nav class="toc" id="toc">
+        <a href="#c-pourquoi" data-i18n="toc.1"></a><a href="#c-progression" data-i18n="toc.2"></a><a href="#c-methode" data-i18n="toc.3"></a>
+        <a href="#c-resilience" data-i18n="toc.4"></a><a href="#c-groupe" data-i18n="toc.5"></a><a href="#c-hoka" data-i18n="toc.6"></a><a href="#c-suite" data-i18n="toc.7"></a>
+      </nav>
+
+      <div class="chapters">
+        <article class="chapter reveal" id="c-pourquoi">
+          <span class="ch-num">i.</span><h3 data-i18n="c1.h"></h3>
+          <div data-i18n="c1.body"></div>
+          <div class="strip" data-photos="media/p/6994909093-1.jpg|media/p/12466740643-1.jpg|media/p/19655741364-4.jpg"></div>
+        </article>
+
+        <article class="chapter reveal" id="c-progression">
+          <span class="ch-num">ii.</span><h3 data-i18n="c2.h"></h3>
+          <div class="ladder" id="ladder"></div>
+          <h4 class="mini-h" data-i18n="c2.log"></h4>
+          <div class="mlog" id="mlog"></div>
+          <div data-i18n="c2.body"></div>
+          <div class="strip" data-photos="media/p/9069175897-1.jpg|media/p/10283969682-3.jpg|media/p/18187718549-1.jpg"></div>
+        </article>
+
+        <article class="chapter reveal" id="c-methode">
+          <span class="ch-num">iii.</span><h3 data-i18n="c3.h"></h3>
+          <div data-i18n="c3.body"></div>
+        </article>
+
+        <article class="chapter reveal" id="c-resilience">
+          <span class="ch-num">iv.</span><h3 data-i18n="c4.h"></h3>
+          <div data-i18n="c4.body"></div>
+          <div class="strip strip-2" data-photos="media/p/19641595133-3.jpg|media/p/20241542850-5.jpg"></div>
+          <figure class="quote">
+            <blockquote>“Xavier is the kind of athlete that I would like resembling.”</blockquote>
+            <figcaption>Constant Wiederkehr, <span data-i18n="c4.quote"></span> <a href="https://constantwiederkehr.substack.com/p/were-all-in-this-together" target="_blank" rel="noopener">We're All in This Together</a> ↗</figcaption>
+          </figure>
+        </article>
+
+        <article class="chapter reveal" id="c-groupe">
+          <span class="ch-num">v.</span><h3 data-i18n="c5.h"></h3>
+          <div data-i18n="c5.body"></div>
+          <div class="strip" data-photos="media/p/17089786632-1.jpg|media/p/15961446505-1.jpg|media/p/10283969682-2.jpg"></div>
+        </article>
+
+        <article class="chapter reveal" id="c-hoka">
+          <span class="ch-num">vi.</span><h3 data-i18n="c6.h"></h3>
+          <div class="hoka-top">
+            <div class="hoka-left"><div class="hoka-count"><span data-count="17">0</span><small data-i18n="c6.pairs"></small></div><div data-i18n="c6.lede"></div>
+            <figure class="bib"><img src="media/p/13829773951-1.jpg" alt="" loading="lazy"><figcaption data-i18n="c6.bib"></figcaption></figure></div>
+            <figure class="hoka-video" id="hokaVideo" hidden>
+              <video src="media/hoka.mp4" muted loop playsinline preload="metadata"></video>
+              <button type="button" class="vid-sound" aria-label="Son">♪</button>
+            </figure>
+          </div>
+          <div class="wall" id="wall"></div>
+        </article>
+
+        <article class="chapter reveal" id="c-suite">
+          <span class="ch-num">vii.</span><h3 data-i18n="c7.h"></h3>
+          <div data-i18n="c7.lede"></div>
+          <ol class="lanes" id="lanes"></ol>
+          <div class="commit" data-i18n="c7.commit"></div>
+          <h4 class="mini-h" data-i18n="c7.dreams"></h4>
+          <div class="dreams">
+            <div class="dream dream-big"><span class="dream-k" data-i18n="c7.big"></span><ul data-i18n="c7.bigList"></ul></div>
+            <div class="dream"><span class="dream-k" data-i18n="c7.small"></span><ul data-i18n="c7.smallList"></ul></div>
+          </div>
+          <div class="strip strip-2" data-photos="media/p/12115397051-4.jpg|media/p/15017734325-5.jpg"></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer ink">
+  <div class="wrap foot">
+    <p class="foot-big" data-i18n="foot.big"></p>
+    <div class="foot-links" id="footLinks"></div>
+    <p class="foot-strava"><a href="https://www.strava.com/athletes/49274111" target="_blank" rel="noopener">strava.com/athletes/49274111 ↗</a></p>
+    <p class="foot-small" data-i18n="foot.small"></p>
+  </div>
+</footer>
+
+<div class="tip" id="tip" role="tooltip"></div>
+<div class="lightbox" id="lightbox" hidden><img alt=""><button type="button" aria-label="Fermer">×</button></div>
+
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="data/data.js"></script>
+<script src="data/heat.js" onerror="window.HEAT=[]"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
