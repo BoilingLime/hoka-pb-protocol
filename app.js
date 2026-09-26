@@ -604,7 +604,8 @@ function lightbox(src) { const lb = $('#lightbox'); $('img', lb).src = src; lb.h
 function closeLightbox() { const lb = $('#lightbox'); lb.classList.remove('on'); setTimeout(() => (lb.hidden = true), 300); }
 function video() {
   const fig = $('#hokaVideo'), v = $('video', fig);
-  v.addEventListener('loadeddata', () => { fig.hidden = false; onReveal(fig, () => v.play().catch(() => {})); });
+  v.addEventListener('error', () => (fig.hidden = true));
+  onReveal(fig, () => v.play().catch(() => {}));
   $('.vid-sound', fig).addEventListener('click', e => { v.muted = !v.muted; e.currentTarget.classList.toggle('on', !v.muted); });
 }
 function footer() {

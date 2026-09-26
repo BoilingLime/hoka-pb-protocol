@@ -49,6 +49,8 @@ fr: {
   'c2.body': `<p>Sept marathons en trois ans, et chacun m'a appris quelque chose. À Boston, j'avais le chrono pour me requalifier en 2027. Après l'incendie, le voyage n'était plus possible financièrement. J'y retournerai.</p>
     <p>Sur les autres distances : <b>1:20:49 au semi</b> (25e au Semi de l'Île), 1:21:46 au HOKA Semi de Paris, 37:08 aux 10 km des Métropolitaines, et une <b>3e place au scratch</b> aux Foulées des Baïnes.</p>`,
   'c2.log': 'Carnet de marathons',
+  'c3.team': `<span class="team-k">L'équipe</span>
+    <p>Constant n'est pas seulement mon coach, c'est mon partenaire dans ce projet. En parallèle, il coache chez RunWise, notamment aux côtés de <b>Maxime Lopes</b>, athlète HOKA. Si je suis sélectionné, j'aimerais l'embarquer dans l'aventure : qu'il puisse échanger avec les coachs du Protocol, partager cinq ans d'historique sur Nolio, et raconter la prépa de son côté. Un coureur, un coach, une même ligne d'arrivée.</p>`,
   'c3.h': 'La méthode',
   'c3.body': `<p>Je m'entraîne avec un plan depuis mon premier marathon. De 2023 à fin 2024 avec RunWise et le coach Patrick Lehoux-Gagnon, puis depuis décembre 2024 en coaching individuel avec <b>Constant Wiederkehr</b>, qui m'a suivi dès ses premières années de coach. Tout est planifié sur Nolio, chaque séance est commentée.</p>
     <div class="week">
@@ -84,7 +86,7 @@ fr: {
   'c6.apparelList': 'Cuissard Novafly ×3 · t-shirts · sac trail run 8 L',
   'c6.bib': 'HOKA Semi de Paris 2025 · dossard 3037',
   'c7.h': 'La suite',
-  'c7.lede': `<p>Des objectifs chiffrés, dans l'ordre, sans brûler les étapes. La référence : l'allure de Boston, <b>3:58/km</b>.</p>`,
+  'c7.lede': `<p>Des objectifs chiffrés, dans l'ordre, sans brûler les étapes, et toujours un plan B, en course comme dans la saison. La référence : l'allure de Boston, <b>3:58/km</b>.</p>`,
   'c7.commit': `<span class="commit-k">Disponibilité &amp; engagement</span><ul>
       <li><b>Paris</b> : je m'y rends déjà régulièrement pour le travail. Les sessions du groupe sont compatibles avec mon agenda.</li>
       <li><b>Décembre → mars</b> : 6 séances par semaine sont déjà ma routine. Le programme remplace ma prépa, il ne s'y ajoute pas.</li>
@@ -93,11 +95,11 @@ fr: {
   'c7.lane': 'Couloir', 'c7.vs': 'vs Boston', 'c7.target': 'objectif',
   'c7.l1.d': '29 nov. 2026', 'c7.l1.t': 'Marathon de La Rochelle', 'c7.l1.s': 'Dernier test avant le Protocol, malgré une saison chargée',
   'c7.l2.d': 'déc. → mars', 'c7.l2.t': 'PB Protocol · Paris', 'c7.l2.s': 'Prépa structurée, doubles, force, nutrition, sessions avec le groupe',
-  'c7.l3.d': '14 mars 2027', 'c7.l3.t': 'Zurich Maratò Barcelona', 'c7.l3.s': 'Se rapprocher des 2:40',
+  'c7.l3.d': '14 mars 2027', 'c7.l3.t': 'Zurich Maratò Barcelona', 'c7.l3.s': 'Plan A : se rapprocher des 2:40. Plan B : le Marathon de Paris, si le tirage au sort le veut.',
   'c7.l4.d': '2029', 'c7.l4.t': 'Un marathon en 2:30', 'c7.l4.s': "L'objectif long terme",
   'c7.dreams': 'Rêves de course',
   'c7.big': 'Les grands rendez-vous',
-  'c7.bigList': '<li><b>London Marathon</b>, si un dossard veut bien de moi</li><li><b>Boston</b>, encore</li><li><b>Marathon de Paris 2027</b>, tirage au sort en cours</li>',
+  'c7.bigList': '<li><b>London Marathon</b>, si un dossard veut bien de moi</li><li><b>Boston</b>, encore</li>',
   'c7.small': 'Et tous les autres',
   'c7.smallList': '<li>Le dimanche matin, seul avec mes deux chiens</li><li>Sous la pluie, de nuit, dans le froid</li><li>Les tours de piste qu\'on enchaîne sans compter</li>',
   'foot.big': 'Run it again,<br>and again, <em>and again.</em>',
@@ -159,6 +161,8 @@ en: {
   'c2.body': `<p>Seven marathons in three years, each one with a lesson. In Boston I ran a time good enough to requalify for 2027. After the fire, the trip just wasn't affordable anymore. I'll be back.</p>
     <p>Other distances: <b>1:20:49 for the half</b> (25th at the Semi de l'Île), 1:21:46 at the HOKA Semi de Paris, 37:08 at the Métropolitaines 10K, and a <b>3rd place overall</b> at Les Foulées des Baïnes.</p>`,
   'c2.log': 'Marathon log',
+  'c3.team': `<span class="team-k">The team</span>
+    <p>Constant isn't just my coach, he's my partner in this. He also coaches at RunWise, including alongside <b>Maxime Lopes</b>, a HOKA athlete. If I'm selected, I'd love to bring him along: let him connect with the Protocol coaches, share five years of history from Nolio, and tell the story of the build from his side. One runner, one coach, one finish line.</p>`,
   'c3.h': 'The method',
   'c3.body': `<p>I've trained on a plan since my very first marathon. From 2023 to late 2024 with RunWise and coach Patrick Lehoux-Gagnon, then since December 2024 one-on-one with <b>Constant Wiederkehr</b>, who's coached me since his early years as a coach. Everything lives in Nolio, and every session gets feedback.</p>
     <div class="week">
@@ -194,7 +198,7 @@ en: {
   'c6.apparelList': 'Novafly shorts ×3 · tees · 8L trail running pack',
   'c6.bib': 'HOKA Semi de Paris 2025 · bib 3037',
   'c7.h': "What's next",
-  'c7.lede': `<p>Clear targets, in order, one step at a time. The benchmark: my Boston pace, <b>3:58/km</b>.</p>`,
+  'c7.lede': `<p>Clear targets, in order, one step at a time, and always a plan B, on race day and across the season. The benchmark: my Boston pace, <b>3:58/km</b>.</p>`,
   'c7.commit': `<span class="commit-k">Availability &amp; commitment</span><ul>
       <li><b>Paris</b>: I'm already there regularly for work. Group sessions fit my schedule.</li>
       <li><b>December → March</b>: 6 sessions a week is already my routine. The program replaces my build, it doesn't add to it.</li>
@@ -203,11 +207,11 @@ en: {
   'c7.lane': 'Lane', 'c7.vs': 'vs Boston', 'c7.target': 'target',
   'c7.l1.d': 'Nov 29, 2026', 'c7.l1.t': 'La Rochelle Marathon', 'c7.l1.s': 'Last test before the Protocol, after a heavy season',
   'c7.l2.d': 'Dec → Mar', 'c7.l2.t': 'PB Protocol · Paris', 'c7.l2.s': 'Structured build, doubles, strength, nutrition, group sessions',
-  'c7.l3.d': 'Mar 14, 2027', 'c7.l3.t': 'Zurich Maratò Barcelona', 'c7.l3.s': 'Get close to 2:40',
+  'c7.l3.d': 'Mar 14, 2027', 'c7.l3.t': 'Zurich Maratò Barcelona', 'c7.l3.s': 'Plan A: get close to 2:40. Plan B: the Paris Marathon, if the lottery says yes.',
   'c7.l4.d': '2029', 'c7.l4.t': 'A 2:30 marathon', 'c7.l4.s': 'The long-term goal',
   'c7.dreams': 'Race dreams',
   'c7.big': 'The big stages',
-  'c7.bigList': '<li><b>London Marathon</b>, if a bib ever comes my way</li><li><b>Boston</b>, again</li><li><b>Paris Marathon 2027</b>, lottery pending</li>',
+  'c7.bigList': '<li><b>London Marathon</b>, if a bib ever comes my way</li><li><b>Boston</b>, again</li>',
   'c7.small': 'And all the others',
   'c7.smallList': '<li>Sunday mornings, alone with my two dogs</li><li>In the rain, at night, in the cold</li><li>Track laps, stacked without counting</li>',
   'foot.big': 'Run it again,<br>and again, <em>and again.</em>',
