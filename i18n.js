@@ -46,7 +46,7 @@ fr: {
     <p>Le sport d'endurance ressemble à la vie : des hauts, des bas, des jours où tout est facile et d'autres où il faut simplement tenir. C'est lui qui m'a appris à rebondir. J'ai commencé tard, à 31 ans, et mon seul regret est de ne pas avoir mis de baskets plus tôt. Alors je rattrape ces années au chrono : me dépasser, trouver mes limites, voir de quoi je suis capable.</p>
     <p>J'aime les grands rendez-vous autant que les sorties sans témoin. Courir Boston devant une foule immense, et courir seul avec mes deux chiens le dimanche matin. Sous la pluie, de nuit, dans le froid, à enchaîner les tours de piste. C'est le même plaisir : celui de la répétition, de la séance qu'on remet sur le métier.</p>`,
   'c2.h': 'La progression',
-  'c2.body': `<p>Sept marathons en trois ans, et chacun m'a appris quelque chose. À Boston, j'avais le chrono pour me requalifier en 2027. Après l'incendie, le voyage n'était plus possible financièrement. J'y retournerai.</p>
+  'c2.body': `<p>Sept marathons en trois ans, et chacun m'a appris quelque chose. Même le Marathon Pour Tous des JO de Paris, couru de nuit sur le parcours olympique : pour une fois, j'ai laissé la performance au placard pour profiter de chaque instant. À Boston, j'avais le chrono pour me requalifier en 2027. Après l'incendie, le voyage n'était plus possible financièrement. J'y retournerai.</p>
     <p>Sur les autres distances : <b>1:20:49 au semi</b> (25e au Semi de l'Île), 1:21:46 au HOKA Semi de Paris, 37:08 aux 10 km des Métropolitaines, et une <b>3e place au scratch</b> aux Foulées des Baïnes.</p>`,
   'c2.log': 'Carnet de marathons',
   'c3.team': `<span class="team-k">L'équipe</span>
@@ -67,6 +67,7 @@ fr: {
     <p>Ma marge de progression se lit dans les données : trois séances de renfo enregistrées en 2025 pour 3 150 km courus. À Nantes, j'ai « perdu le son et l'image » au 31e kilomètre : la nutrition de course reste un chantier. En 2027, je veux ajouter des doubles pour tenir <b>100 km par semaine en moyenne</b>. C'est pour ça que la <b>force</b>, la <b>récupération</b> et la <b>nutrition</b> encadrées par des experts sont exactement ce dont j'ai besoin.</p>`,
   'c4.h': 'Été 2026',
   'c4.body': `<p class="big">Le 24 juillet 2026, on a fui notre maison en Gironde, achetée quelques mois plus tôt, et on l'a regardée brûler de loin.</p>
+    <p>Dans les cendres, il y avait aussi tous mes dossards et toutes mes médailles, gardés précieusement depuis le premier. Saumur, La Rochelle, Boston. Les perdre m'a brisé le cœur : c'était la trace de chaque kilomètre de ces cinq années.</p>
     <p>Douze jours plus tôt, j'avais abandonné sur un trail à Valmorel. Tout s'est arrêté, sauf une chose : courir. Deux semaines après l'incendie, je partais deux jours dans le Sancy, 115 km et 3 900 m D+. J'ai appelé les deux sorties « Hard reboot » et « Halt and catch fire » : l'humour d'informaticien comme remède.</p>
     <p>Depuis, je m'accroche à une règle simple : quoi qu'il arrive, je garde la séance du jour, même raccourcie, et c'est le reste qui s'adapte. Le 19 septembre, je terminais 26e de l'Ultra des Vagues à Belle-Île (81 km), blessé à la tête au 5e kilomètre, porté par Caroline, ma compagne, qui n'a jamais laissé la porte de l'abandon ouverte. Tout perdre m'a appris à relativiser et à garder l'essentiel.</p>
     <p class="big hl-line">J'ai perdu ma maison, pas mes jambes. Et elles ne demandent qu'à courir.</p>`,
@@ -108,7 +109,7 @@ fr: {
   'months': ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'],
   'goals': 'objectifs →', 'objective': 'Objectif', 'sub3': 'sub 3', 'future': 'projection',
   'log': {
-    11113987947: 'Premier marathon', 12879742028: 'Sub 3 ou rien', 16729471479: 'De nuit, pour le souvenir', 17611954138: 'Pas de prépa, pas de miracle',
+    11113987947: 'Premier marathon', 12879742028: 'Sub 3 ou rien', 16729471479: 'Les JO : la performance au placard, pour savourer', 17611954138: 'Pas de prépa, pas de miracle',
     18949578188: 'Le mur au 31e, record quand même', 21130116865: 'Deuxième prépa avec Constant', 22597120890: '« Trust the process »',
   },
 },
@@ -158,7 +159,7 @@ en: {
     <p>Endurance sport is a lot like life: highs, lows, days when everything clicks and days when you just hold on. It taught me how to bounce back. I started late, at 31, and my only regret is not lacing up sooner. So I'm making up for those years on the clock: pushing myself, finding my limits, seeing what I'm capable of.</p>
     <p>I love the big stages as much as the runs nobody sees. Running Boston in front of a huge crowd, and running alone with my two dogs on a Sunday morning. In the rain, at night, in the cold, stacking up laps on the track. It's the same joy: the joy of repetition, of coming back to the work again and again.</p>`,
   'c2.h': 'Progression',
-  'c2.body': `<p>Seven marathons in three years, each one with a lesson. In Boston I ran a time good enough to requalify for 2027. After the fire, the trip just wasn't affordable anymore. I'll be back.</p>
+  'c2.body': `<p>Seven marathons in three years, each one with a lesson. Even the Marathon Pour Tous at the Paris Olympics, run at night on the Olympic course: for once, I left performance on the shelf to savor every moment. In Boston I ran a time good enough to requalify for 2027. After the fire, the trip just wasn't affordable anymore. I'll be back.</p>
     <p>Other distances: <b>1:20:49 for the half</b> (25th at the Semi de l'Île), 1:21:46 at the HOKA Semi de Paris, 37:08 at the Métropolitaines 10K, and a <b>3rd place overall</b> at Les Foulées des Baïnes.</p>`,
   'c2.log': 'Marathon log',
   'c3.team': `<span class="team-k">The team</span>
@@ -179,6 +180,7 @@ en: {
     <p>My upside shows in the data: three strength sessions logged in 2025 against 3,150 km of running. In Nantes I “lost sound and picture” at km 31: race-day fueling is still a work in progress. In 2027 I want to add doubles to average <b>100 km a week</b>. That's exactly why expert-led <b>strength</b>, <b>recovery</b> and <b>nutrition</b> are what I need.</p>`,
   'c4.h': 'Summer 2026',
   'c4.body': `<p class="big">On July 24, 2026, we fled our house in Gironde, bought just a few months earlier, and watched it burn from a distance.</p>
+    <p>In the ashes were all my race bibs and medals, every one of them kept carefully since the first. Saumur, La Rochelle, Boston. Losing them broke my heart: they were the record of every kilometer of those five years.</p>
     <p>Twelve days before, I'd DNF'd a trail race in Valmorel. Everything stopped, except one thing: running. Two weeks after the fire I went to the Sancy mountains for two days, 115 km and 3,900 m of climbing. I named the runs “Hard reboot” and “Halt and catch fire”: IT humor as therapy.</p>
     <p>Since then I hold on to one simple rule: whatever happens, I keep the day's session, even a shorter one, and everything else adapts. On September 19 I finished 26th at the Ultra des Vagues on Belle-Île (81 km), with a head injury from km 5, carried by Caroline, my partner, who never left the door to quitting open. Losing everything taught me what really matters.</p>
     <p class="big hl-line">I lost my house, not my legs. And they just want to run.</p>`,
@@ -220,7 +222,7 @@ en: {
   'months': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   'goals': 'targets →', 'objective': 'Goal', 'sub3': 'sub-3', 'future': 'projected',
   'log': {
-    11113987947: 'First marathon', 12879742028: 'Sub-3 or nothing', 16729471479: 'At night, for the memory', 17611954138: 'No build, no miracle',
+    11113987947: 'First marathon', 12879742028: 'Sub-3 or nothing', 16729471479: 'The Olympics: performance on the shelf, just savoring it', 17611954138: 'No build, no miracle',
     18949578188: 'Hit the wall at km 31, PR anyway', 21130116865: 'Second build with Constant', 22597120890: '“Trust the process”',
   },
 },

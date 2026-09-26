@@ -407,15 +407,14 @@ section.paper, section.ink { padding: 120px 0; position: relative; }
 .d-media img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 3px; cursor: zoom-in; filter: grayscale(1) contrast(1.08); transition: filter .5s; aspect-ratio: 4/5; }
 .d-media img:hover { filter: none; }
 .d-media.n1 img { grid-column: span 6; aspect-ratio: 16/10; }
-.d-media.n2 img { grid-column: span 3; }
+.d-media.n2 img { grid-column: span 3; aspect-ratio: 4/5; height: auto; }
 .d-media.n3 img:first-child { grid-column: span 6; aspect-ratio: 16/9; }
 .d-media.n3 img:not(:first-child) { grid-column: span 3; aspect-ratio: 4/3; }
 
 /* photos dans la candidature */
 .strip { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 6px; margin: 28px 0 8px; }
 .strip.strip-2 { grid-template-columns: 1.4fr 1fr; }
-.strip figure { margin: 0; overflow: hidden; border-radius: 4px; aspect-ratio: 3/4; }
-.strip figure:first-child { aspect-ratio: auto; }
+.strip figure { margin: 0; overflow: hidden; border-radius: 4px; height: clamp(220px, 30vw, 360px); }
 .strip img { width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; filter: grayscale(1) contrast(1.1); transition: filter .6s, transform 1.2s var(--ease); }
 .strip figure:hover img { filter: none; transform: scale(1.03); }
 .lightbox { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; background: rgba(8,9,7,.94); opacity: 0; transition: opacity .3s; cursor: zoom-out; padding: 30px; }
@@ -505,9 +504,10 @@ section.paper, section.ink { padding: 120px 0; position: relative; }
   .lane-bar { margin-left: 0; }
   .dreams { grid-template-columns: 1fr; }
   .strip { grid-template-columns: 1fr 1fr; }
-  .strip figure:first-child { grid-column: span 2; aspect-ratio: 16/10; }
+  .strip figure:first-child { grid-column: span 2; }
+  .strip figure { height: 220px; }
   .strip.strip-2 { grid-template-columns: 1fr 1fr; }
-  .strip.strip-2 figure:first-child { grid-column: auto; aspect-ratio: 3/4; }
+  .strip.strip-2 figure:first-child { grid-column: auto; }
   .bib { grid-template-columns: 1fr; }
 }
 
